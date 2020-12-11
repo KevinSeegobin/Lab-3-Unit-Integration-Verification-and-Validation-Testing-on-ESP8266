@@ -5,15 +5,15 @@ For reference: https://myelearning.sta.uwi.edu/pluginfile.php/1030947/mod_wiki/a
 
 Unit testing involves taking a single function and invoking it with a given set of parameters. Then, when the execution finishes, an outcome is checked against the expected result. Code that accomplishes this is called a test case. Checking the outcome is usually done with a form of assertions. For example, assume you have the following function "foo": <br>
 
-int foo (int a, int b)
-{ return b–a-1; }
-A test case might look like this: 
-
-void test_foo_case_a (){
-int ret;
-ret = foo(1,2);
-assert(ret == 0); 
-} 
+int foo (int a, int b)<br>
+{ return b–a-1; }<br>
+A test case might look like this: <br>
+<br>
+void test_foo_case_a (){<br>
+int ret;<br>
+ret = foo(1,2);<br>
+assert(ret == 0); <br>
+} <br>
 <br>
 “Integration Testing” combines different functions and tests them as a group. It also tests the interface between modules and identifies critical defects which are caused due to the integration of different modules. To facilitate incremental integration testing we create stubs (called by Module under test - top-down development) and drivers (that call the module under test - bottom-up development). For example if we wish to call the function foo from inside a task function, we would invoke the task function, and verify that it operates correctly without being scheduled.
 <br>
