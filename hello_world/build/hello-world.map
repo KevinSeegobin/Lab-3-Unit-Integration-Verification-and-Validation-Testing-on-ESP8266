@@ -17769,7 +17769,7 @@ END GROUP
 
 .iram0.text     0x40100080     0x4ee7
                 0x40100080                _iram_text_start = ABSOLUTE (.)
- *(.iram1 .iram1.* EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2-fde.* *libgcc.a:unwind-dw2.* *libphy.a *libpp.a) .literal EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2-fde.* *libgcc.a:unwind-dw2.* *libphy.a *libpp.a) .text)
+ *(.iram1 .iram1.* EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2.* *libgcc.a:unwind-dw2-fde.* *libphy.a *libpp.a) .literal EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2.* *libgcc.a:unwind-dw2-fde.* *libphy.a *libpp.a) .text)
  .iram1.0.literal
                 0x40100080       0x1c C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(task_wdt.o)
  .iram1.1.literal
@@ -18366,71 +18366,71 @@ END GROUP
                 0x40105454                g_misc_nvs
                 0x40105458                g_log_mod
                 0x4010545c                g_log_level
- *libfreertos.a:list.*(.bss .bss.* COMMON)
- *libfreertos.a:queue.*(.bss .bss.* COMMON)
- *libfreertos.a:stream_buffer.*(.bss .bss.* COMMON)
  *libfreertos.a:event_groups.*(.bss .bss.* COMMON)
- *libfreertos.a:tasks.*(.bss .bss.* COMMON)
- .bss.uxSchedulerSuspended
-                0x40105460        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.xIdleTaskHandle
-                0x40105464        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.xNextTaskUnblockTime
-                0x40105468        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.uxTaskNumber
-                0x4010546c        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.xNumOfOverflows
-                0x40105470        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.xYieldPending
-                0x40105474        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.uxPendedTicks
-                0x40105478        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.xSchedulerRunning
-                0x4010547c        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.uxTopReadyPriority
-                0x40105480        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.xTickCount
-                0x40105484        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.uxCurrentNumberOfTasks
-                0x40105488        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.xSuspendedTaskList
-                0x4010548c       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.uxDeletedTasksWaitingCleanUp
-                0x401054a0        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.xTasksWaitingTermination
-                0x401054a4       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.xPendingReadyList
-                0x401054b8       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.pxOverflowDelayedTaskList
-                0x401054cc        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.pxDelayedTaskList
-                0x401054d0        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.xDelayedTaskList2
-                0x401054d4       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.xDelayedTaskList1
-                0x401054e8       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.pxReadyTasksLists
-                0x401054fc      0x12c C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
- .bss.pxCurrentTCB
-                0x40105628        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
-                0x40105628                pxCurrentTCB
- *libfreertos.a:freertos_hooks.*(.bss .bss.* COMMON)
- *libfreertos.a:impure.*(.bss .bss.* COMMON)
  *libfreertos.a:timers.*(.bss .bss.* COMMON)
  .bss.xLastTime$4351
-                0x4010562c        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
+                0x40105460        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
  .bss.xTimerTaskHandle
-                0x40105630        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
+                0x40105464        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
  .bss.xTimerQueue
-                0x40105634        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
+                0x40105468        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
  .bss.pxOverflowTimerList
-                0x40105638        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
+                0x4010546c        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
  .bss.pxCurrentTimerList
-                0x4010563c        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
+                0x40105470        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
  .bss.xActiveTimerList2
-                0x40105640       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
+                0x40105474       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
  .bss.xActiveTimerList1
-                0x40105654       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
+                0x40105488       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(timers.o)
+ *libfreertos.a:stream_buffer.*(.bss .bss.* COMMON)
+ *libfreertos.a:list.*(.bss .bss.* COMMON)
+ *libfreertos.a:tasks.*(.bss .bss.* COMMON)
+ .bss.uxSchedulerSuspended
+                0x4010549c        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.xIdleTaskHandle
+                0x401054a0        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.xNextTaskUnblockTime
+                0x401054a4        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.uxTaskNumber
+                0x401054a8        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.xNumOfOverflows
+                0x401054ac        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.xYieldPending
+                0x401054b0        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.uxPendedTicks
+                0x401054b4        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.xSchedulerRunning
+                0x401054b8        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.uxTopReadyPriority
+                0x401054bc        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.xTickCount
+                0x401054c0        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.uxCurrentNumberOfTasks
+                0x401054c4        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.xSuspendedTaskList
+                0x401054c8       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.uxDeletedTasksWaitingCleanUp
+                0x401054dc        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.xTasksWaitingTermination
+                0x401054e0       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.xPendingReadyList
+                0x401054f4       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.pxOverflowDelayedTaskList
+                0x40105508        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.pxDelayedTaskList
+                0x4010550c        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.xDelayedTaskList2
+                0x40105510       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.xDelayedTaskList1
+                0x40105524       0x14 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.pxReadyTasksLists
+                0x40105538      0x12c C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+ .bss.pxCurrentTCB
+                0x40105664        0x4 C:/esp/Lab3/hello_world/build/freertos\libfreertos.a(tasks.o)
+                0x40105664                pxCurrentTCB
+ *libfreertos.a:impure.*(.bss .bss.* COMMON)
+ *libfreertos.a:queue.*(.bss .bss.* COMMON)
+ *libfreertos.a:freertos_hooks.*(.bss .bss.* COMMON)
  *liblwip.a:(.bss .bss.* COMMON)
                 0x40105668                . = ALIGN (0x4)
                 0x40105668                _iram_bss_end = ABSOLUTE (.)
@@ -18560,7 +18560,7 @@ END GROUP
 .dram0.bss      0x3ffe8560     0x18a8
                 0x3ffe8560                . = ALIGN (0x8)
                 0x3ffe8560                _bss_start = ABSOLUTE (.)
- *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:list.* *libfreertos.a:queue.* *libfreertos.a:stream_buffer.* *libfreertos.a:event_groups.* *libfreertos.a:tasks.* *libfreertos.a:freertos_hooks.* *libfreertos.a:impure.* *libfreertos.a:timers.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:list.* *libfreertos.a:queue.* *libfreertos.a:stream_buffer.* *libfreertos.a:event_groups.* *libfreertos.a:tasks.* *libfreertos.a:freertos_hooks.* *libfreertos.a:impure.* *libfreertos.a:timers.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:list.* *libfreertos.a:queue.* *libfreertos.a:stream_buffer.* *libfreertos.a:event_groups.* *libfreertos.a:tasks.* *libfreertos.a:freertos_hooks.* *libfreertos.a:impure.* *libfreertos.a:timers.* *libcore.a) COMMON)
+ *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:event_groups.* *libfreertos.a:timers.* *libfreertos.a:stream_buffer.* *libfreertos.a:list.* *libfreertos.a:tasks.* *libfreertos.a:impure.* *libfreertos.a:queue.* *libfreertos.a:freertos_hooks.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:event_groups.* *libfreertos.a:timers.* *libfreertos.a:stream_buffer.* *libfreertos.a:list.* *libfreertos.a:tasks.* *libfreertos.a:impure.* *libfreertos.a:queue.* *libfreertos.a:freertos_hooks.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:event_groups.* *libfreertos.a:timers.* *libfreertos.a:stream_buffer.* *libfreertos.a:list.* *libfreertos.a:tasks.* *libfreertos.a:impure.* *libfreertos.a:queue.* *libfreertos.a:freertos_hooks.* *libcore.a) COMMON)
  .bss.s_nmi_wd_state
                 0x3ffe8560        0x4 C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(task_wdt.o)
  .bss.s_reset_reason
@@ -18899,7 +18899,7 @@ END GROUP
 .flash.text     0x40210010    0x1affa
                 0x40210010                _stext = .
                 0x40210010                _text_start = ABSOLUTE (.)
- *(EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2-fde.* *libgcc.a:unwind-dw2.* *libphy.a *libpp.a) .literal EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2-fde.* *libgcc.a:unwind-dw2.* *libphy.a *libpp.a) .literal.* EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2-fde.* *libgcc.a:unwind-dw2.* *libphy.a *libpp.a) .text EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2-fde.* *libgcc.a:unwind-dw2.* *libphy.a *libpp.a) .text.* .wifi0iram .wifi0iram.*)
+ *(EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2.* *libgcc.a:unwind-dw2-fde.* *libphy.a *libpp.a) .literal EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2.* *libgcc.a:unwind-dw2-fde.* *libphy.a *libpp.a) .literal.* EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2.* *libgcc.a:unwind-dw2-fde.* *libphy.a *libpp.a) .text EXCLUDE_FILE(*libspi_flash.a:spi_flash_raw.* *libgcc.a:unwind-dw2.* *libgcc.a:unwind-dw2-fde.* *libphy.a *libpp.a) .text.* .wifi0iram .wifi0iram.*)
  .literal.user_init_entry
                 0x40210010       0x1c C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(startup.o)
                                  0x50 (size before relaxing)
@@ -20273,10 +20273,10 @@ END GROUP
  .literal.esp_event_post_to
                 0x4021089c        0xc C:/esp/Lab3/hello_world/build/esp_event\libesp_event.a(esp_event.o)
                                  0x40 (size before relaxing)
- .literal       0x402108a8       0x28 C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2-fde.o)
-                                 0x7c (size before relaxing)
- .literal       0x402108d0       0x60 C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2.o)
+ .literal       0x402108a8       0x60 C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2.o)
                                 0x104 (size before relaxing)
+ .literal       0x40210908       0x28 C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2-fde.o)
+                                 0x7c (size before relaxing)
  .text.user_init_entry
                 0x40210930       0x7d C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(startup.o)
                                  0xa1 (size before relaxing)
@@ -22863,9 +22863,8 @@ END GROUP
  *fill*         0x40221dd3        0x0 
  *fill*         0x40221dd3        0x0 
  *fill*         0x40221dd3        0x1 
- .text.UnitTest
-                0x40221dd4        0x7 C:/esp/Lab3/hello_world/build/main\libmain.a(hello_world_main.o)
-                0x40221dd4                UnitTest
+ .text.Unit     0x40221dd4        0x7 C:/esp/Lab3/hello_world/build/main\libmain.a(hello_world_main.o)
+                0x40221dd4                Unit
  *fill*         0x40221ddb        0x0 
  *fill*         0x40221ddb        0x0 
  *fill*         0x40221ddb        0x0 
@@ -23255,47 +23254,47 @@ END GROUP
  *fill*         0x40222270        0x0 
  *fill*         0x40222270        0x0 
  *fill*         0x40222270        0x0 
- *libgcc.a:unwind-dw2-fde.*(.literal .literal.* .text .text.*)
- .text          0x40222270      0xe71 C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2-fde.o)
-                                0xe79 (size before relaxing)
-                0x40222e60                __register_frame_info_bases
-                0x40222e80                __register_frame_info
-                0x40222ea4                __register_frame
-                0x40222ee0                __register_frame_info_table_bases
-                0x40222efc                __register_frame_info_table
-                0x40222f18                __register_frame_table
-                0x40222f4c                __deregister_frame_info_bases
-                0x40222fdc                __deregister_frame_info
-                0x40222fec                __deregister_frame
-                0x40223008                _Unwind_Find_FDE
- *fill*         0x402230e1        0x0 
  *libgcc.a:unwind-dw2.*(.literal .literal.* .text .text.*)
- *fill*         0x402230e1        0x3 
- .text          0x402230e4     0x1e6b C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2.o)
+ .text          0x40222270     0x1e6b C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2.o)
                                0x1e87 (size before relaxing)
-                0x40224a90                _Unwind_GetGR
-                0x40224ad0                _Unwind_GetCFA
-                0x40224ad8                _Unwind_SetGR
-                0x40224b28                _Unwind_GetIP
-                0x40224b30                _Unwind_GetIPInfo
-                0x40224b40                _Unwind_SetIP
-                0x40224b48                _Unwind_GetLanguageSpecificData
-                0x40224b50                _Unwind_GetRegionStart
-                0x40224b58                _Unwind_FindEnclosingFunction
-                0x40224b74                _Unwind_GetDataRelBase
-                0x40224b7c                _Unwind_GetTextRelBase
-                0x40224b84                __frame_state_for
-                0x40224c38                _Unwind_RaiseException
-                0x40224d24                _Unwind_ForcedUnwind
-                0x40224dac                _Unwind_Resume
-                0x40224e38                _Unwind_Resume_or_Rethrow
-                0x40224ec4                _Unwind_DeleteException
-                0x40224edc                _Unwind_Backtrace
- *fill*         0x40224f4f        0x0 
+                0x40223c1c                _Unwind_GetGR
+                0x40223c5c                _Unwind_GetCFA
+                0x40223c64                _Unwind_SetGR
+                0x40223cb4                _Unwind_GetIP
+                0x40223cbc                _Unwind_GetIPInfo
+                0x40223ccc                _Unwind_SetIP
+                0x40223cd4                _Unwind_GetLanguageSpecificData
+                0x40223cdc                _Unwind_GetRegionStart
+                0x40223ce4                _Unwind_FindEnclosingFunction
+                0x40223d00                _Unwind_GetDataRelBase
+                0x40223d08                _Unwind_GetTextRelBase
+                0x40223d10                __frame_state_for
+                0x40223dc4                _Unwind_RaiseException
+                0x40223eb0                _Unwind_ForcedUnwind
+                0x40223f38                _Unwind_Resume
+                0x40223fc4                _Unwind_Resume_or_Rethrow
+                0x40224050                _Unwind_DeleteException
+                0x40224068                _Unwind_Backtrace
+ *fill*         0x402240db        0x0 
+ *libgcc.a:unwind-dw2-fde.*(.literal .literal.* .text .text.*)
+ *fill*         0x402240db        0x1 
+ .text          0x402240dc      0xe71 C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2-fde.o)
+                                0xe79 (size before relaxing)
+                0x40224ccc                __register_frame_info_bases
+                0x40224cec                __register_frame_info
+                0x40224d10                __register_frame
+                0x40224d4c                __register_frame_info_table_bases
+                0x40224d68                __register_frame_info_table
+                0x40224d84                __register_frame_table
+                0x40224db8                __deregister_frame_info_bases
+                0x40224e48                __deregister_frame_info
+                0x40224e58                __deregister_frame
+                0x40224e74                _Unwind_Find_FDE
+ *fill*         0x40224f4d        0x0 
  *(.irom0.literal .irom0.text)
  *(.irom.literal .irom.text .irom.text.literal)
  *(.text2 .text2.* .literal2 .literal2.*)
- *fill*         0x40224f4f        0x1 
+ *fill*         0x40224f4d        0x3 
  .text2.45      0x40224f50      0x289 C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libphy.a(phy_chip_v5_ana_romfunc.o)
                                 0x291 (size before relaxing)
                 0x40224f60                rom_set_channel_freq
@@ -25718,7 +25717,7 @@ OUTPUT(C:/esp/Lab3/hello_world/build/hello-world.elf elf32-xtensa-le)
  .debug_line    0x000655ed      0xaa4 C:/esp/Lab3/hello_world/build/esp_event\libesp_event.a(default_event_loop.o)
  .debug_line    0x00066091     0x2d6b C:/esp/Lab3/hello_world/build/esp_event\libesp_event.a(esp_event.o)
 
-.debug_str      0x00000000    0x1d349
+.debug_str      0x00000000    0x1d345
  .debug_str     0x00000000      0x539 C:/esp/Lab3/hello_world/build/app_update\libapp_update.a(esp_app_desc.o)
                                 0x668 (size before relaxing)
  .debug_str     0x00000539     0x1015 C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(startup.o)
@@ -25763,205 +25762,205 @@ OUTPUT(C:/esp/Lab3/hello_world/build/hello-world.elf elf32-xtensa-le)
                                 0x685 (size before relaxing)
  .debug_str     0x00005383      0x157 C:/esp/Lab3/hello_world/build/log\liblog.a(log.o)
                                0x132a (size before relaxing)
- .debug_str     0x000054da       0x89 C:/esp/Lab3/hello_world/build/main\libmain.a(hello_world_main.o)
-                               0x1165 (size before relaxing)
- .debug_str     0x00005563       0x63 C:/esp/Lab3/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
+ .debug_str     0x000054da       0x85 C:/esp/Lab3/hello_world/build/main\libmain.a(hello_world_main.o)
+                               0x1161 (size before relaxing)
+ .debug_str     0x0000555f       0x63 C:/esp/Lab3/hello_world/build/newlib\libnewlib.a(esp_malloc.o)
                                0x118b (size before relaxing)
- .debug_str     0x000055c6      0x117 C:/esp/Lab3/hello_world/build/newlib\libnewlib.a(locks.o)
+ .debug_str     0x000055c2      0x117 C:/esp/Lab3/hello_world/build/newlib\libnewlib.a(locks.o)
                                0x1395 (size before relaxing)
- .debug_str     0x000056dd       0xbf C:/esp/Lab3/hello_world/build/newlib\libnewlib.a(reent_init.o)
+ .debug_str     0x000056d9       0xbf C:/esp/Lab3/hello_world/build/newlib\libnewlib.a(reent_init.o)
                                0x1209 (size before relaxing)
- .debug_str     0x0000579c       0x88 C:/esp/Lab3/hello_world/build/newlib\libnewlib.a(syscall.o)
+ .debug_str     0x00005798       0x88 C:/esp/Lab3/hello_world/build/newlib\libnewlib.a(syscall.o)
                                0x124b (size before relaxing)
- .debug_str     0x00005824      0x25e c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-asprintf.o)
+ .debug_str     0x00005820      0x25e c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-asprintf.o)
                                 0x7ba (size before relaxing)
- .debug_str     0x00005a82      0x10c c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-assert.o)
+ .debug_str     0x00005a7e      0x10c c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-assert.o)
                                 0x641 (size before relaxing)
- .debug_str     0x00005b8e       0xe8 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fclose.o)
+ .debug_str     0x00005b8a       0xe8 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fclose.o)
                                 0x821 (size before relaxing)
- .debug_str     0x00005c76       0xa3 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fflush.o)
+ .debug_str     0x00005c72       0xa3 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fflush.o)
                                 0x824 (size before relaxing)
- .debug_str     0x00005d19      0x172 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-findfp.o)
+ .debug_str     0x00005d15      0x172 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-findfp.o)
                                 0x92e (size before relaxing)
- .debug_str     0x00005e8b       0x96 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fopen.o)
+ .debug_str     0x00005e87       0x96 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fopen.o)
                                 0x84d (size before relaxing)
- .debug_str     0x00005f21       0x85 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fprintf.o)
+ .debug_str     0x00005f1d       0x85 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fprintf.o)
                                 0x65a (size before relaxing)
- .debug_str     0x00005fa6       0x83 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fseek.o)
+ .debug_str     0x00005fa2       0x83 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fseek.o)
                                 0x78e (size before relaxing)
- .debug_str     0x00006029      0x198 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fseeko.o)
+ .debug_str     0x00006025      0x198 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fseeko.o)
                                 0x996 (size before relaxing)
- .debug_str     0x000061c1       0x7b c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fwalk.o)
+ .debug_str     0x000061bd       0x7b c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fwalk.o)
                                 0x788 (size before relaxing)
- .debug_str     0x0000623c       0xed c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-impure.o)
+ .debug_str     0x00006238       0xed c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-impure.o)
                                 0x5ea (size before relaxing)
- .debug_str     0x00006329       0x9d c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-makebuf.o)
+ .debug_str     0x00006325       0x9d c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-makebuf.o)
                                 0x8e6 (size before relaxing)
- .debug_str     0x000063c6      0x3f7 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-nano-svfprintf.o)
+ .debug_str     0x000063c2      0x3f7 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-nano-svfprintf.o)
                                 0xc7c (size before relaxing)
- .debug_str     0x000067bd       0x57 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_str     0x000067b9       0x57 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-nano-vfprintf.o)
                                 0xcff (size before relaxing)
- .debug_str     0x00006814       0xc7 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_str     0x00006810       0xc7 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-nano-vfprintf_i.o)
                                 0xc13 (size before relaxing)
- .debug_str     0x000068db       0x77 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-printf.o)
+ .debug_str     0x000068d7       0x77 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-printf.o)
                                 0x7b1 (size before relaxing)
- .debug_str     0x00006952       0x81 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-putchar.o)
+ .debug_str     0x0000694e       0x81 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-putchar.o)
                                 0x776 (size before relaxing)
- .debug_str     0x000069d3       0x7a c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-puts.o)
+ .debug_str     0x000069cf       0x7a c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-puts.o)
                                 0x827 (size before relaxing)
- .debug_str     0x00006a4d       0x7f c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-refill.o)
+ .debug_str     0x00006a49       0x7f c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-refill.o)
                                 0x7cb (size before relaxing)
- .debug_str     0x00006acc       0x79 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-sprintf.o)
+ .debug_str     0x00006ac8       0x79 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-sprintf.o)
                                 0x7b2 (size before relaxing)
- .debug_str     0x00006b45       0xc5 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-stdio.o)
+ .debug_str     0x00006b41       0xc5 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-stdio.o)
                                 0x7c0 (size before relaxing)
- .debug_str     0x00006c0a       0x7d c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-vasprintf.o)
+ .debug_str     0x00006c06       0x7d c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-vasprintf.o)
                                 0x7bd (size before relaxing)
- .debug_str     0x00006c87       0x73 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-wbuf.o)
+ .debug_str     0x00006c83       0x73 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-wbuf.o)
                                 0x7a6 (size before relaxing)
- .debug_str     0x00006cfa       0x6d c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-wsetup.o)
+ .debug_str     0x00006cf6       0x6d c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-wsetup.o)
                                 0x7a1 (size before relaxing)
- .debug_str     0x00006d67       0xf7 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(isatty.o)
+ .debug_str     0x00006d63       0xf7 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(isatty.o)
                                 0x761 (size before relaxing)
- .debug_str     0x00006e5e       0x71 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-flags.o)
+ .debug_str     0x00006e5a       0x71 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-flags.o)
                                 0x62f (size before relaxing)
- .debug_str     0x00006ecf       0x9f c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fputwc.o)
+ .debug_str     0x00006ecb       0x9f c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fputwc.o)
                                 0x83c (size before relaxing)
- .debug_str     0x00006f6e       0x7d c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fvwrite.o)
+ .debug_str     0x00006f6a       0x7d c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-fvwrite.o)
                                 0x815 (size before relaxing)
- .debug_str     0x00006feb      0x198 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-locale.o)
+ .debug_str     0x00006fe7      0x198 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-locale.o)
                                 0xa17 (size before relaxing)
- .debug_str     0x00007183       0x89 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-mbtowc_r.o)
+ .debug_str     0x0000717f       0x89 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-mbtowc_r.o)
                                 0x9a8 (size before relaxing)
- .debug_str     0x0000720c       0xf8 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-memchr.o)
+ .debug_str     0x00007208       0xf8 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-memchr.o)
                                 0x60a (size before relaxing)
- .debug_str     0x00007304       0x6b c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-putc.o)
+ .debug_str     0x00007300       0x6b c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-putc.o)
                                 0x7e9 (size before relaxing)
- .debug_str     0x0000736f       0x77 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-wcrtomb.o)
+ .debug_str     0x0000736b       0x77 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-wcrtomb.o)
                                 0x99c (size before relaxing)
- .debug_str     0x000073e6       0x90 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-wctomb_r.o)
+ .debug_str     0x000073e2       0x90 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-wctomb_r.o)
                                 0x9af (size before relaxing)
- .debug_str     0x00007476       0xed c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-ctype_.o)
+ .debug_str     0x00007472       0xed c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-ctype_.o)
                                 0x90e (size before relaxing)
- .debug_str     0x00007563     0x6a19 C:/esp/Lab3/hello_world/build/nvs_flash\libnvs_flash.a(nvs_api.o)
+ .debug_str     0x0000755f     0x6a19 C:/esp/Lab3/hello_world/build/nvs_flash\libnvs_flash.a(nvs_api.o)
                                0x8255 (size before relaxing)
- .debug_str     0x0000df7c     0x122b C:/esp/Lab3/hello_world/build/nvs_flash\libnvs_flash.a(nvs_storage.o)
+ .debug_str     0x0000df78     0x122b C:/esp/Lab3/hello_world/build/nvs_flash\libnvs_flash.a(nvs_storage.o)
                                0x5fea (size before relaxing)
- .debug_str     0x0000f1a7      0x6bd C:/esp/Lab3/hello_world/build/nvs_flash\libnvs_flash.a(nvs_item_hash_list.o)
+ .debug_str     0x0000f1a3      0x6bd C:/esp/Lab3/hello_world/build/nvs_flash\libnvs_flash.a(nvs_item_hash_list.o)
                                0x1ef7 (size before relaxing)
- .debug_str     0x0000f864      0x6e5 C:/esp/Lab3/hello_world/build/nvs_flash\libnvs_flash.a(nvs_page.o)
+ .debug_str     0x0000f860      0x6e5 C:/esp/Lab3/hello_world/build/nvs_flash\libnvs_flash.a(nvs_page.o)
                                0x2a97 (size before relaxing)
- .debug_str     0x0000ff49      0x725 C:/esp/Lab3/hello_world/build/nvs_flash\libnvs_flash.a(nvs_pagemanager.o)
+ .debug_str     0x0000ff45      0x725 C:/esp/Lab3/hello_world/build/nvs_flash\libnvs_flash.a(nvs_pagemanager.o)
                                0x504a (size before relaxing)
- .debug_str     0x0001066e       0x3f C:/esp/Lab3/hello_world/build/nvs_flash\libnvs_flash.a(nvs_types.o)
+ .debug_str     0x0001066a       0x3f C:/esp/Lab3/hello_world/build/nvs_flash\libnvs_flash.a(nvs_types.o)
                                0x1100 (size before relaxing)
- .debug_str     0x000106ad      0x735 C:/esp/Lab3/hello_world/build/pthread\libpthread.a(pthread.o)
+ .debug_str     0x000106a9      0x735 C:/esp/Lab3/hello_world/build/pthread\libpthread.a(pthread.o)
                                0x1c16 (size before relaxing)
- .debug_str     0x00010de2      0x14d C:/esp/Lab3/hello_world/build/pthread\libpthread.a(pthread_local_storage.o)
+ .debug_str     0x00010dde      0x14d C:/esp/Lab3/hello_world/build/pthread\libpthread.a(pthread_local_storage.o)
                                0x13e6 (size before relaxing)
- .debug_str     0x00010f2f      0x246 C:/esp/Lab3/hello_world/build/spi_flash\libspi_flash.a(partition.o)
+ .debug_str     0x00010f2b      0x246 C:/esp/Lab3/hello_world/build/spi_flash\libspi_flash.a(partition.o)
                                 0xcd6 (size before relaxing)
- .debug_str     0x00011175      0x54d C:/esp/Lab3/hello_world/build/spi_flash\libspi_flash.a(spi_flash.o)
+ .debug_str     0x00011171      0x54d C:/esp/Lab3/hello_world/build/spi_flash\libspi_flash.a(spi_flash.o)
                                 0xd39 (size before relaxing)
- .debug_str     0x000116c2      0x13d C:/esp/Lab3/hello_world/build/spi_flash\libspi_flash.a(spi_flash_raw.o)
+ .debug_str     0x000116be      0x13d C:/esp/Lab3/hello_world/build/spi_flash\libspi_flash.a(spi_flash_raw.o)
                                 0x8bc (size before relaxing)
- .debug_str     0x000117ff      0x7ad C:/esp/Lab3/hello_world/build/vfs\libvfs.a(vfs.o)
+ .debug_str     0x000117fb      0x7ad C:/esp/Lab3/hello_world/build/vfs\libvfs.a(vfs.o)
                                0x1d91 (size before relaxing)
- .debug_str     0x00011fac      0x67e C:/esp/Lab3/hello_world/build/vfs\libvfs.a(vfs_uart.o)
+ .debug_str     0x00011fa8      0x67e C:/esp/Lab3/hello_world/build/vfs\libvfs.a(vfs_uart.o)
                                0x2243 (size before relaxing)
- .debug_str     0x0001262a       0xe7 C:/esp/Lab3/hello_world/build/wpa_supplicant\libwpa_supplicant.a(aes-internal-enc.o)
+ .debug_str     0x00012626       0xe7 C:/esp/Lab3/hello_world/build/wpa_supplicant\libwpa_supplicant.a(aes-internal-enc.o)
                                 0x673 (size before relaxing)
- .debug_str     0x00012711      0x189 C:/esp/Lab3/hello_world/build/wpa_supplicant\libwpa_supplicant.a(ccmp.o)
+ .debug_str     0x0001270d      0x189 C:/esp/Lab3/hello_world/build/wpa_supplicant\libwpa_supplicant.a(ccmp.o)
                                 0x75d (size before relaxing)
- .debug_str     0x0001289a       0xf4 C:/esp/Lab3/hello_world/build/wpa_supplicant\libwpa_supplicant.a(aes-ccm.o)
+ .debug_str     0x00012896       0xf4 C:/esp/Lab3/hello_world/build/wpa_supplicant\libwpa_supplicant.a(aes-ccm.o)
                                 0x71d (size before relaxing)
- .debug_str     0x0001298e       0x63 C:/esp/Lab3/hello_world/build/wpa_supplicant\libwpa_supplicant.a(aes-internal.o)
+ .debug_str     0x0001298a       0x63 C:/esp/Lab3/hello_world/build/wpa_supplicant\libwpa_supplicant.a(aes-internal.o)
                                 0x5ef (size before relaxing)
- .debug_str     0x000129f1      0x16f c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(del_op.o)
+ .debug_str     0x000129ed      0x16f c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(del_op.o)
                                 0xb81 (size before relaxing)
- .debug_str     0x00012b60       0xe9 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(del_opv.o)
+ .debug_str     0x00012b5c       0xe9 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(del_opv.o)
                                 0x65c (size before relaxing)
- .debug_str     0x00012c49      0x183 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(new_op.o)
+ .debug_str     0x00012c45      0x183 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(new_op.o)
                                 0xc48 (size before relaxing)
- .debug_str     0x00012dcc      0x67c c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_throw.o)
+ .debug_str     0x00012dc8      0x67c c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_throw.o)
                                0x1103 (size before relaxing)
- .debug_str     0x00013448       0xe9 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(new_opv.o)
+ .debug_str     0x00013444       0xe9 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(new_opv.o)
                                 0x65b (size before relaxing)
- .debug_str     0x00013531      0x7eb c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(atomicity.o)
+ .debug_str     0x0001352d      0x7eb c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(atomicity.o)
                                 0xf27 (size before relaxing)
- .debug_str     0x00013d1c      0x2a8 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_globals.o)
+ .debug_str     0x00013d18      0x2a8 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_globals.o)
                                0x120a (size before relaxing)
- .debug_str     0x00013fc4      0x6e1 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_personality.o)
+ .debug_str     0x00013fc0      0x6e1 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_personality.o)
                                0x16cc (size before relaxing)
- .debug_str     0x000146a5      0x16b c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(bad_alloc.o)
+ .debug_str     0x000146a1      0x16b c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(bad_alloc.o)
                                 0x6f9 (size before relaxing)
- .debug_str     0x00014810      0x3c4 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_exception.o)
+ .debug_str     0x0001480c      0x3c4 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_exception.o)
                                 0x9a6 (size before relaxing)
- .debug_str     0x00014bd4      0x1cf c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(new_handler.o)
+ .debug_str     0x00014bd0      0x1cf c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(new_handler.o)
                                0x13e6 (size before relaxing)
- .debug_str     0x00014da3      0x18b c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_catch.o)
+ .debug_str     0x00014d9f      0x18b c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_catch.o)
                                0x1079 (size before relaxing)
- .debug_str     0x00014f2e      0xa0d c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(guard.o)
+ .debug_str     0x00014f2a      0xa0d c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(guard.o)
                                0x1c36 (size before relaxing)
- .debug_str     0x0001593b      0x88b c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(class_type_info.o)
+ .debug_str     0x00015937      0x88b c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(class_type_info.o)
                                 0xa2e (size before relaxing)
- .debug_str     0x000161c6      0x1a7 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_terminate.o)
+ .debug_str     0x000161c2      0x1a7 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_terminate.o)
                                0x173b (size before relaxing)
- .debug_str     0x0001636d      0x22d c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_alloc.o)
+ .debug_str     0x00016369      0x22d c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_alloc.o)
                                0x19d7 (size before relaxing)
- .debug_str     0x0001659a      0x2cc c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(tinfo.o)
+ .debug_str     0x00016596      0x2cc c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(tinfo.o)
                                 0x54f (size before relaxing)
- .debug_str     0x00016866      0x397 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(si_class_type_info.o)
+ .debug_str     0x00016862      0x397 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(si_class_type_info.o)
                                 0x8b4 (size before relaxing)
- .debug_str     0x00016bfd       0xe9 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_call.o)
+ .debug_str     0x00016bf9       0xe9 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_call.o)
                                 0xf7a (size before relaxing)
- .debug_str     0x00016ce6       0xe9 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(del_ops.o)
+ .debug_str     0x00016ce2       0xe9 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(del_ops.o)
                                 0x651 (size before relaxing)
- .debug_str     0x00016dcf       0xf9 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_term_handler.o)
+ .debug_str     0x00016dcb       0xf9 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_term_handler.o)
                                 0xcab (size before relaxing)
- .debug_str     0x00016ec8       0xf9 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_unex_handler.o)
+ .debug_str     0x00016ec4       0xf9 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libstdc++.a(eh_unex_handler.o)
                                 0x76f (size before relaxing)
- .debug_str     0x00016fc1      0x7e8 C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(uart.o)
+ .debug_str     0x00016fbd      0x7e8 C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(uart.o)
                                0x2179 (size before relaxing)
- .debug_str     0x000177a9       0x84 C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(backtrace.o)
+ .debug_str     0x000177a5       0x84 C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(backtrace.o)
                                 0x211 (size before relaxing)
- .debug_str     0x0001782d      0x6eb C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(esp_sleep.o)
+ .debug_str     0x00017829      0x6eb C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(esp_sleep.o)
                                0x1ded (size before relaxing)
- .debug_str     0x00017f18      0x1e4 C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(esp_timer.o)
+ .debug_str     0x00017f14      0x1e4 C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(esp_timer.o)
                                0x14c5 (size before relaxing)
- .debug_str     0x000180fc      0x759 C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(esp_wifi.o)
+ .debug_str     0x000180f8      0x759 C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(esp_wifi.o)
                                0x2370 (size before relaxing)
- .debug_str     0x00018855       0xf6 C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(ets_printf.o)
+ .debug_str     0x00018851       0xf6 C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(ets_printf.o)
                                 0x753 (size before relaxing)
- .debug_str     0x0001894b       0x7a C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(hw_random.o)
+ .debug_str     0x00018947       0x7a C:/esp/Lab3/hello_world/build/esp8266\libesp8266.a(hw_random.o)
                                 0x606 (size before relaxing)
- .debug_str     0x000189c5     0x131f C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2.o)
+ .debug_str     0x000189c1     0x131f C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2.o)
                                0x17f2 (size before relaxing)
- .debug_str     0x00019ce4      0x3ef C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2-fde.o)
+ .debug_str     0x00019ce0      0x3ef C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(unwind-dw2-fde.o)
                                 0x760 (size before relaxing)
- .debug_str     0x0001a0d3      0x12e C:/esp/Lab3/hello_world/build/esp_common\libesp_common.a(esp_err_to_name.o)
+ .debug_str     0x0001a0cf      0x12e C:/esp/Lab3/hello_world/build/esp_common\libesp_common.a(esp_err_to_name.o)
                                0x1349 (size before relaxing)
- .debug_str     0x0001a201      0x6e1 C:/esp/Lab3/hello_world/build/esp_ringbuf\libesp_ringbuf.a(ringbuf.o)
+ .debug_str     0x0001a1fd      0x6e1 C:/esp/Lab3/hello_world/build/esp_ringbuf\libesp_ringbuf.a(ringbuf.o)
                                0x1a26 (size before relaxing)
- .debug_str     0x0001a8e2      0x163 C:/esp/Lab3/hello_world/build/newlib\libnewlib.a(time.o)
+ .debug_str     0x0001a8de      0x163 C:/esp/Lab3/hello_world/build/newlib\libnewlib.a(time.o)
                                0x13db (size before relaxing)
- .debug_str     0x0001aa45       0xb2 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-atexit.o)
+ .debug_str     0x0001aa41       0xb2 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-atexit.o)
                                 0x641 (size before relaxing)
- .debug_str     0x0001aaf7      0x116 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-sysgettod.o)
+ .debug_str     0x0001aaf3      0x116 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-sysgettod.o)
                                 0x682 (size before relaxing)
- .debug_str     0x0001ac0d       0x98 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-__atexit.o)
+ .debug_str     0x0001ac09       0x98 c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-__atexit.o)
                                 0x6b3 (size before relaxing)
- .debug_str     0x0001aca5       0x8c c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-__call_atexit.o)
+ .debug_str     0x0001aca1       0x8c c:/users/kevin/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib\libc_nano.a(lib_a-__call_atexit.o)
                                 0x674 (size before relaxing)
- .debug_str     0x0001ad31      0x181 C:/esp/Lab3/hello_world/build/pthread\libpthread.a(pthread_cond_var.o)
+ .debug_str     0x0001ad2d      0x181 C:/esp/Lab3/hello_world/build/pthread\libpthread.a(pthread_cond_var.o)
                                0x1518 (size before relaxing)
- .debug_str     0x0001aeb2     0x1a1b C:/esp/Lab3/hello_world/build/tcpip_adapter\libtcpip_adapter.a(tcpip_adapter_lwip.o)
+ .debug_str     0x0001aeae     0x1a1b C:/esp/Lab3/hello_world/build/tcpip_adapter\libtcpip_adapter.a(tcpip_adapter_lwip.o)
                                0x37d7 (size before relaxing)
- .debug_str     0x0001c8cd      0x165 C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(_moddi3.o)
+ .debug_str     0x0001c8c9      0x165 C:/esp/esp8266_RTOS_SDK/components/esp8266/lib\libgcc.a(_moddi3.o)
                                 0x25c (size before relaxing)
- .debug_str     0x0001ca32      0x4b3 C:/esp/Lab3/hello_world/build/esp_event\libesp_event.a(default_event_loop.o)
+ .debug_str     0x0001ca2e      0x4b3 C:/esp/Lab3/hello_world/build/esp_event\libesp_event.a(default_event_loop.o)
                                0x203f (size before relaxing)
- .debug_str     0x0001cee5      0x464 C:/esp/Lab3/hello_world/build/esp_event\libesp_event.a(esp_event.o)
+ .debug_str     0x0001cee1      0x464 C:/esp/Lab3/hello_world/build/esp_event\libesp_event.a(esp_event.o)
                                0x1a7f (size before relaxing)
 
 .comment        0x00000000       0x8c
