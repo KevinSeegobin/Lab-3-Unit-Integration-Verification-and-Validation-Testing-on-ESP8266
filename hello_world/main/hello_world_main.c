@@ -11,11 +11,7 @@
 #include "freertos/task.h"
 #include "esp_system.h"
 #include "esp_spi_flash.h"
-
-int Unit(int a, int b)
-{
-    return a - b - 1;
-}
+#include "IntegrationModule.h"
 
 void app_main()
 {
@@ -34,7 +30,7 @@ void app_main()
     {
         printf("Restarting in %d seconds...\n", i);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
-        ret = Unit(2, 1);
+        ret = Unit(10, 1);
         assert(ret == 0);
     }
     printf("Restarting now.\n");

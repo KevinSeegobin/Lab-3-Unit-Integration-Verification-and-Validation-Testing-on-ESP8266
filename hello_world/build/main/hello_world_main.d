@@ -33,7 +33,8 @@ hello_world_main.o: C:/esp/Lab3/hello_world/main/hello_world_main.c \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/esp_system.h \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h \
  C:/esp/esp8266_RTOS_SDK/components/spi_flash/include/esp_spi_flash.h \
- C:/esp/esp8266_RTOS_SDK/components/spi_flash/include/spi_flash.h
+ C:/esp/esp8266_RTOS_SDK/components/spi_flash/include/spi_flash.h \
+ C:/esp/Lab3/hello_world/main/IntegrationModule.h
 
 C:/esp/esp8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -104,4 +105,6 @@ C:/esp/esp8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h:
 C:/esp/esp8266_RTOS_SDK/components/spi_flash/include/esp_spi_flash.h:
 
 C:/esp/esp8266_RTOS_SDK/components/spi_flash/include/spi_flash.h:
+
+C:/esp/Lab3/hello_world/main/IntegrationModule.h:
 /c/esp/Lab3/hello_world/main/./hello_world_main.c:
