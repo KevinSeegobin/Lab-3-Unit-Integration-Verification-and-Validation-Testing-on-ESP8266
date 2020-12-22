@@ -2,7 +2,7 @@ esp-mqtt/lib/mqtt_msg.o: \
  C:/esp/esp8266_RTOS_SDK/components/mqtt/esp-mqtt/lib/mqtt_msg.c \
  C:/esp/esp8266_RTOS_SDK/components/mqtt/esp-mqtt/lib/include/mqtt_msg.h \
  C:/esp/esp8266_RTOS_SDK/components/mqtt/esp-mqtt/include/mqtt_config.h \
- C:/esp/hello_world/build/include/sdkconfig.h \
+ C:/esp/Lab3/hello_world/build/include/sdkconfig.h \
  C:/esp/esp8266_RTOS_SDK/components/mqtt/esp-mqtt/lib/include/platform.h \
  C:/esp/esp8266_RTOS_SDK/components/mqtt/esp-mqtt/lib/include/platform_esp32_idf.h \
  C:/esp/esp8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
@@ -86,7 +86,7 @@ C:/esp/esp8266_RTOS_SDK/components/mqtt/esp-mqtt/lib/include/mqtt_msg.h:
 
 C:/esp/esp8266_RTOS_SDK/components/mqtt/esp-mqtt/include/mqtt_config.h:
 
-C:/esp/hello_world/build/include/sdkconfig.h:
+C:/esp/Lab3/hello_world/build/include/sdkconfig.h:
 
 C:/esp/esp8266_RTOS_SDK/components/mqtt/esp-mqtt/lib/include/platform.h:
 

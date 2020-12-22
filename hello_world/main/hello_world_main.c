@@ -13,6 +13,8 @@
 #include "esp_spi_flash.h"
 #include "IntegrationModule.h"
 
+static char cbuffer[512];
+
 void app_main()
 {
     int ret;
@@ -33,6 +35,10 @@ void app_main()
         ret = Unit(10, 1);
         assert(ret == 0);
     }
+
+    vTaskGetRunTimeStats(cbuffer);
+    printf(cbuffer);
+
     printf("Restarting now.\n");
     fflush(stdout);
     esp_restart();

@@ -1,6 +1,6 @@
 src/select.o: C:/esp/esp8266_RTOS_SDK/components/newlib/src/select.c \
  C:/esp/esp8266_RTOS_SDK/components/newlib/platform_include/sys/select.h \
- C:/esp/hello_world/build/include/sdkconfig.h \
+ C:/esp/Lab3/hello_world/build/include/sdkconfig.h \
  C:/esp/esp8266_RTOS_SDK/components/vfs/include/esp_vfs.h \
  C:/esp/esp8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  C:/esp/esp8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
@@ -38,7 +38,7 @@ src/select.o: C:/esp/esp8266_RTOS_SDK/components/newlib/src/select.c \
 
 C:/esp/esp8266_RTOS_SDK/components/newlib/platform_include/sys/select.h:
 
-C:/esp/hello_world/build/include/sdkconfig.h:
+C:/esp/Lab3/hello_world/build/include/sdkconfig.h:
 
 C:/esp/esp8266_RTOS_SDK/components/vfs/include/esp_vfs.h:
 

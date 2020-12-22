@@ -1,6 +1,6 @@
 bootloader_start.o: \
  C:/esp/esp8266_RTOS_SDK/components/bootloader/subproject/main/bootloader_start.c \
- c:\esp\hello_world\build\include\sdkconfig.h \
+ c:\esp\lab3\hello_world\build\include\sdkconfig.h \
  C:/esp/esp8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_config.h \
  C:/esp/esp8266_RTOS_SDK/components/bootloader_support/include/esp_flash_data_types.h \
  C:/esp/esp8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_init.h \
@@ -18,7 +18,7 @@ bootloader_start.o: \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
  C:/esp/esp8266_RTOS_SDK/components/log/include/esp_log_internal.h
 
-c:\esp\hello_world\build\include\sdkconfig.h:
+c:\esp\lab3\hello_world\build\include\sdkconfig.h:
 
 C:/esp/esp8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_config.h:
 

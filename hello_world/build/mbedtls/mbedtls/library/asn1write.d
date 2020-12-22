@@ -1,7 +1,7 @@
 mbedtls/library/asn1write.o: \
  C:/esp/esp8266_RTOS_SDK/components/mbedtls/mbedtls/library/asn1write.c \
  C:/esp/esp8266_RTOS_SDK/components/mbedtls/port/include/mbedtls/esp_config.h \
- C:/esp/hello_world/build/include/sdkconfig.h \
+ C:/esp/Lab3/hello_world/build/include/sdkconfig.h \
  C:/esp/esp8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/config.h \
  C:/esp/esp8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  C:/esp/esp8266_RTOS_SDK/components/mbedtls/port/include/esp_mem.h \
@@ -15,7 +15,7 @@ mbedtls/library/asn1write.o: \
 
 C:/esp/esp8266_RTOS_SDK/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-C:/esp/hello_world/build/include/sdkconfig.h:
+C:/esp/Lab3/hello_world/build/include/sdkconfig.h:
 
 C:/esp/esp8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/config.h:
 

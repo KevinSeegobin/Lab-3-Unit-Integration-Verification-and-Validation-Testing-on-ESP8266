@@ -1,6 +1,6 @@
 src/bootloader_common.o: \
  C:/esp/esp8266_RTOS_SDK/components/bootloader_support/src/bootloader_common.c \
- C:/esp/hello_world/build/include/sdkconfig.h \
+ C:/esp/Lab3/hello_world/build/include/sdkconfig.h \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/xtensa/hal.h \
  C:/esp/esp8266_RTOS_SDK/components/esp_common/include/esp_err.h \
  C:/esp/esp8266_RTOS_SDK/components/log/include/esp_log.h \
@@ -18,7 +18,7 @@ src/bootloader_common.o: \
  C:/esp/esp8266_RTOS_SDK/components/bootloader_support/include/bootloader_common.h \
  C:/esp/esp8266_RTOS_SDK/components/bootloader_support/include/esp_flash_data_types.h
 
-C:/esp/hello_world/build/include/sdkconfig.h:
+C:/esp/Lab3/hello_world/build/include/sdkconfig.h:
 
 C:/esp/esp8266_RTOS_SDK/components/esp8266/include/xtensa/hal.h:
 

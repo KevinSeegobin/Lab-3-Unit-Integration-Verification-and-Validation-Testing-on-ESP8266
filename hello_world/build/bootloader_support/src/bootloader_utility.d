@@ -1,6 +1,6 @@
 src/bootloader_utility.o: \
  C:/esp/esp8266_RTOS_SDK/components/bootloader_support/src/bootloader_utility.c \
- C:/esp/hello_world/build/include/sdkconfig.h \
+ C:/esp/Lab3/hello_world/build/include/sdkconfig.h \
  C:/esp/esp8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_config.h \
  C:/esp/esp8266_RTOS_SDK/components/bootloader_support/include/esp_flash_data_types.h \
  C:/esp/esp8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_utility.h \
@@ -25,7 +25,7 @@ src/bootloader_utility.o: \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/esp_system.h \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h
 
-C:/esp/hello_world/build/include/sdkconfig.h:
+C:/esp/Lab3/hello_world/build/include/sdkconfig.h:
 
 C:/esp/esp8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_config.h:
 

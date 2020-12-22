@@ -16,7 +16,7 @@ port/esp8266/xtensa_context.o: \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/xtensa/xtruntime-frames.h \
  C:/esp/esp8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_timer.h \
  C:/esp/esp8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- C:/esp/hello_world/build/include/sdkconfig.h \
+ C:/esp/Lab3/hello_world/build/include/sdkconfig.h \
  C:/esp/esp8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_rtos.h
 
 C:/esp/esp8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_rtos.h:
@@ -51,7 +51,7 @@ C:/esp/esp8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa
 
 C:/esp/esp8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-C:/esp/hello_world/build/include/sdkconfig.h:
+C:/esp/Lab3/hello_world/build/include/sdkconfig.h:
 
 C:/esp/esp8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/xtensa_rtos.h:
 /c/esp/esp8266_RTOS_SDK/components/freertos/port/esp8266/xtensa_context.S:

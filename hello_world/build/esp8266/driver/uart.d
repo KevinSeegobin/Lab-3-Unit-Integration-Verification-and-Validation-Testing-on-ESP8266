@@ -1,7 +1,7 @@
 driver/uart.o: C:/esp/esp8266_RTOS_SDK/components/esp8266/driver/uart.c \
  C:/esp/esp8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  C:/esp/esp8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- C:/esp/hello_world/build/include/sdkconfig.h \
+ C:/esp/Lab3/hello_world/build/include/sdkconfig.h \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
@@ -48,7 +48,7 @@ C:/esp/esp8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 
 C:/esp/esp8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-C:/esp/hello_world/build/include/sdkconfig.h:
+C:/esp/Lab3/hello_world/build/include/sdkconfig.h:
 
 C:/esp/esp8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
 

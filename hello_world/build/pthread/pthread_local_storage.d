@@ -4,7 +4,7 @@ pthread_local_storage.o: \
  C:/esp/esp8266_RTOS_SDK/components/newlib/platform_include/sys/time.h \
  C:/esp/esp8266_RTOS_SDK/components/esp_common/include/esp_err.h \
  C:/esp/esp8266_RTOS_SDK/components/log/include/esp_log.h \
- C:/esp/hello_world/build/include/sdkconfig.h \
+ C:/esp/Lab3/hello_world/build/include/sdkconfig.h \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
@@ -45,7 +45,7 @@ C:/esp/esp8266_RTOS_SDK/components/esp_common/include/esp_err.h:
 
 C:/esp/esp8266_RTOS_SDK/components/log/include/esp_log.h:
 
-C:/esp/hello_world/build/include/sdkconfig.h:
+C:/esp/Lab3/hello_world/build/include/sdkconfig.h:
 
 C:/esp/esp8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
 

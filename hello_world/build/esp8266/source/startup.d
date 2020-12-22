@@ -1,6 +1,6 @@
 source/startup.o: \
  C:/esp/esp8266_RTOS_SDK/components/esp8266/source/startup.c \
- C:/esp/hello_world/build/include/sdkconfig.h \
+ C:/esp/Lab3/hello_world/build/include/sdkconfig.h \
  C:/esp/esp8266_RTOS_SDK/components/nvs_flash/include/nvs_flash.h \
  C:/esp/esp8266_RTOS_SDK/components/nvs_flash/include/nvs.h \
  C:/esp/esp8266_RTOS_SDK/components/esp_common/include/esp_err.h \
@@ -82,7 +82,7 @@ source/startup.o: \
  C:/esp/esp8266_RTOS_SDK/components/freertos/include/freertos/task.h \
  C:/esp/esp8266_RTOS_SDK/components/newlib/platform_include/esp_newlib.h
 
-C:/esp/hello_world/build/include/sdkconfig.h:
+C:/esp/Lab3/hello_world/build/include/sdkconfig.h:
 
 C:/esp/esp8266_RTOS_SDK/components/nvs_flash/include/nvs_flash.h:
 
